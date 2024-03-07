@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c5860542.css",
+    "main.js": "/portfolio/static/js/main.9d34a8db.js",
+    "static/media/CascadiaCode.ttf": "/portfolio/static/media/CascadiaCode.66741deedd204ca95dbe.ttf",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.546b09a15b9cafe75ddb.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.c5860542.css.map": "/portfolio/static/css/main.c5860542.css.map",
+    "main.9d34a8db.js.map": "/portfolio/static/js/main.9d34a8db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5860542.css",
+    "static/js/main.9d34a8db.js"
+  ]
+}
