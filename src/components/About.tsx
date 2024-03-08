@@ -11,13 +11,13 @@ export const About = (props: {}) => {
         about
       </div>
       <div className='flex md:flex-row flex-col'>
-        <p className='my-auto md:mr-24 mb-16 text-base text-ltext md:text-lg dark:text-dtext'>
-          Engineer with over 2 years of experience building products at pace and scale. Bringing in
-          the declarative paradigm at product development. A dedicated problem solver. Experienced
-          in almost all corners of business-driven software development. Worked extensively in
-          Fullstack Development and AI as well as skilled in Microservices, Deep Learning,
-          Distributed Systems, Python, Go, Kotlin, Amazon Web Service, Low-Level Design, Algorithm,
-          and Data Structure.
+        <p className='my-auto md:mr-24 mb-16 text-ltext text-sm md:text-lg md:text-md dark:text-dtext'>
+          While I'm relatively new to the field of software engineering, I offer a fresh perspective
+          in product development. My foundation in various aspects of software development is solid,
+          particularly in Backend Development. Though my experience in frontend development is
+          limited, I'm eager to learn and grow in this area. Skilled in languages like C/C++ and
+          Java, coupled with expertise in Data Structures & Algorithms and Distributed Systems, I'm
+          dedicated to continuous learning and problem-solving to deliver impactful solutions.
         </p>
         <div className='mx-auto'>
           <Skills />

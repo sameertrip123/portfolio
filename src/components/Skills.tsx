@@ -1,22 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { MdOutlineArrowForwardIos, MdOutlineArrowBackIosNew } from 'react-icons/md'
 
 export const Skills = () => {
   const vals = [
-    ['C', 'C++', 'Go', 'Java'],
+    ['C/C++', 'Go', 'Java', 'PHP'],
     ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
-    ['react', 'node.js', 'python', 'aws'],
-    ['java', 'android dev', 'problem solving', 'LLD'],
-    [],
+    ['Vue', 'Laravel', 'Tailwind CSS'],
+    ['MySQL', 'MongoDB', 'Redis'],
+    ['LLD', 'OOPS', 'Data Structure', 'Algorithms'],
   ]
 
   const [idx, setIdx] = useState(0)
   const prevVals = () => setIdx((x) => (vals.length + x - 1) % vals.length)
-  const nextVals = () => setIdx((x) => (x + 1) % vals.length)
-  useEffect(() => {
-    setInterval(prevVals, 7500)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  const nextVals = (event: React.MouseEvent<SVGSVGElement, MouseEvent>) => {
+    event.stopPropagation()
+    setIdx((x) => (x + 1) % vals.length)
+  }
 
   return (
     <div className='flex flex-col flex-shrink-0 dark:border-dprimary shadow-lg border border-lprimary w-56 h-64 text-ltext dark:text-dtext duration-200 ease-in-out'>
@@ -25,7 +24,7 @@ export const Skills = () => {
       </div>
       <div className='bg-lprimary dark:bg-dprimary w-full h-[1px]'></div>
       <div className='flex w-full h-full'>
-        <MdOutlineArrowBackIosNew className='my-auto' onClick={prevVals} />
+        <MdOutlineArrowBackIosNew className='my-auto hover:cursor-pointer' onClick={prevVals} />
         <div className='flex flex-col m-auto text-center'>
           {vals[idx].map((skill, i) => (
             <div
@@ -36,7 +35,7 @@ export const Skills = () => {
             </div>
           ))}
         </div>
-        <MdOutlineArrowForwardIos className='my-auto' onClick={nextVals} />
+        <MdOutlineArrowForwardIos className='my-auto hover:cursor-pointer' onClick={nextVals} />
       </div>
     </div>
   )

@@ -91,7 +91,7 @@ export const Navbar = () => {
                 tclass={`p-4 items-center ${i !== 3 ? ' border-b border-dprimary' : ''}`}
               />
             ))}
-            <Button name='Resume' onClick={download} />
+            <Button name='resume' onClick={download} />
           </ul>
         </ul>
       </nav>
