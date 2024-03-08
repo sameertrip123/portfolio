@@ -29,7 +29,7 @@ export const Button = (props: { name: string; onClick: () => void }) => (
 )
 
 export const Navbar = () => {
-  const elements = ['About', 'Experience', 'Projects', 'Contact']
+  const elements = ['about', 'experience', 'projects', 'contact']
   const [nav, setNav] = useState(false)
   const [theme, setTheme] = useDarkMode()
   const isDark = theme === 'dark'

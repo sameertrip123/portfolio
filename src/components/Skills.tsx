@@ -3,9 +3,11 @@ import { MdOutlineArrowForwardIos, MdOutlineArrowBackIosNew } from 'react-icons/
 
 export const Skills = () => {
   const vals = [
-    ['go', 'kotlin', 'typescript', 'microservices'],
+    ['C', 'C++', 'Go', 'Java'],
+    ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
     ['react', 'node.js', 'python', 'aws'],
     ['java', 'android dev', 'problem solving', 'LLD'],
+    [],
   ]
 
   const [idx, setIdx] = useState(0)
