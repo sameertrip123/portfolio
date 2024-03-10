@@ -23,10 +23,7 @@ export const experiences: work[] = [
     company: 'Recruit CRM',
     companyLink: 'https://recruitcrm.io/',
     description: [
-      "World's first Real Estate NER (Named Entity Recognition). Developed voice‑based real estate search which can handle contextual natural language Search ‑ \"sea facing properties in  Malad east\"",
-      "Delivered the latest iteration of Blox frontend using Next.js. Incorporated a middleware (Go/BFF) for aggregating API calls and caching.",
-      'Developed RASA-based chatbot which is capable of searching properties, performing actions such as site booking and answering non-domain specific questions like chat GPT ',
-      'Developed a novel method to separate voices in an audio using deep feature extraction followed by k-means clustering.',
+      'Worked on Single Page Applications (SPAs) and assisted in the implementation of micro frontend architecture.',
     ],
   },
   {
@@ -36,11 +33,9 @@ export const experiences: work[] = [
     company: 'Outscal',
     companyLink: 'https://outscal.com/',
     description: [
-      'Contributed to gRPC backend services responsible for generating insights for compass listings. Improved test coverage of the service codebase from 10% to 86%. Currently contributing to new features to gather openhouse and email-campaign insights',
-      'Developed a backend microservice to gather insights on the third party support ticketing service, which helped product team to identify the problem areas in customer support and helped the support team to reduce the resolution time by 25%.',
-      'Delivered frontend features using React to enhance article search used in the compass Support and Onboarding System',
-      'Worked with CRM and TM Android team and delivered crucial features such as Client Dashboard, Contact Import, Household Support which are being used by over 10 thousands compass agents',
-      'Fixed over 10 production crashes during on-call duty and refactored over 5000 lines of code on the Android codebase',
+      'Conducted daily code reviews and provided timely feedback on C++, Data Structures, and Object-Oriented Programming assignments, resulting in a 20% acceleration of student progress within a two-month period',
+      'Addressed queries promptly, ensuring the satisfaction of over 20 students and fostering a supportive learning environment.',
+      'Adapted teaching methods based on student needs, contributing to ongoing improvement in performance and understanding.',
     ],
   },
   {
@@ -50,8 +45,10 @@ export const experiences: work[] = [
     company: 'DoSelect',
     companyLink: 'https://doselect.com/',
     description: [
-      'Developed a pClick model to predict clickability of bing ads from global market data using Aether and Scope',
-      'Studied impact of the global model on the large and small markets where the global model performed as good (less by 0.01%) as market specific models',
+      'Collaborated with team members to develop coding problems and multiple-choice questions (MCQs) primarily centered on Data Structures and Algorithms for use in hiring assessments and online tests.',
+      'Improved the problem-solving experience by enhancing the clarity of existing problem statements, introducing comprehensive test cases covering edge cases, addressing problem constraints, adding code stubs, and creating editorials for problems.',
+      'Worked closely with team members to ensure the quality and relevance of the assessment content, facilitating an effective evaluation process for candidates.',
+      'Contributed to the creation of a robust assessment framework by refining existing problems and developing new ones, aligning them with the desired skill sets and competencies sought by hiring organizations.',
     ],
   },
   {
@@ -61,8 +58,8 @@ export const experiences: work[] = [
     company: 'Samsung Prism',
     companyLink: 'https://www.samsungprism.com/',
     description: [
-      'Developed a pClick model to predict clickability of bing ads from global market data using Aether and Scope',
-      'Studied impact of the global model on the large and small markets where the global model performed as good (less by 0.01%) as market specific models',
+      'Contributed to the design and enhancement of an IoT service designed to periodically scan for the optimal access point in the background, seamlessly connecting to the most reliable option within the network.',
+      'Utilized QoS parameters to achieve latency of less than 300 millisecond, resulting in an improved experience.',
     ],
   },
 ]
@@ -89,5 +86,5 @@ export const projects: project[] = [
       'Functional utilites for go slices and maps implimented with go generics. Includes useful methods like map, filter etc',
     githubLink: 'https://github.com/ashis0013/gollections',
     outLink: 'https://pkg.go.dev/github.com/ashis0013/gollections',
-  }
+  },
 ]
