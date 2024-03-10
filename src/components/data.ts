@@ -78,7 +78,7 @@ export const experiences: work[] = [
     company: 'Outscal',
     companyLink: 'https://outscal.com/',
     description: [
-      'Conducted daily code reviews and provided timely feedback on C++, Data Structures, and Object-Oriented Programming assignments, resulting in a 20% acceleration of student progress within a two-month period',
+      'Conducted daily code reviews and provided timely feedback on C++, Data Structures, and Object-Oriented Programming assignments, resulting in a 20% acceleration of student progress within a two-month period.',
       'Addressed queries promptly, ensuring the satisfaction of over 20 students and fostering a supportive learning environment.',
       'Adapted teaching methods based on student needs, contributing to ongoing improvement in performance and understanding.',
     ],
