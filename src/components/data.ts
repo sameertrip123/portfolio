@@ -23,7 +23,9 @@ export const experiences: work[] = [
     company: 'Recruit CRM',
     companyLink: 'https://recruitcrm.io/',
     description: [
-      'Worked on Single Page Applications (SPAs) and assisted in the implementation of micro frontend architecture.',
+      'Developed and maintained Single Page Applications (SPAs) using PHP, Laravel, HTML, CSS, JavaScript and Vue.js, ensuring robust and responsive user interfaces',
+      'Utilized REST APIs for seamless communication between frontend and backend systems, ensuring efficient data exchange and application functionality.',
+      'Applied Test-Driven Development (TDD) principles to ensure the reliability and functionality of codebase components',
     ],
   },
   {
@@ -71,7 +73,7 @@ export const projects: project[] = [
     docLink:
       'https://docs.google.com/document/d/1zE1wLhNrZn8bFSIiHCW75SIGVYvzuEjvgRINzFFeRzg/edit?usp=sharing',
     description:
-      'Plugable and scalable feedback ingestion system written in go. Able to pull feedbacks related to relevant tenants from different sources.',
+      'A web app that lets user to search and apply to job openings based on their experience, location and salary',
   },
   {
     title: 'COVID detection from X-Ray',
