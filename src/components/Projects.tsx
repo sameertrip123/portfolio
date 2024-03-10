@@ -1,60 +1,73 @@
-import React from 'react'
-import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import { HiOutlineDocumentText } from 'react-icons/hi'
-import { project, projects } from './data'
-
-const Card = (props: { proj: project }) => (
-  <div className='flex flex-col flex-shrink-0 justify-between bg-lbg dark:bg-dbg hover:shadow-glow hover:dark:shadow-glowdark mx-auto rounded-xl w-56 h-64 hover:scale-110 duration-200 ease-out'>
-    <p className='p-1 w-full text-center text-lprimary text-xl dark:text-dprimary'>
-      {props.proj.title}
-    </p>
-    <p className='px-4 w-full text-ltext text-sm dark:text-dtext'>{props.proj.description}</p>
-    <div className='flex justify-between my-3 w-full'>
-      <div></div>
-      {(props.proj.docLink ?? '') !== '' && (
-        <a href={props.proj.docLink} target={'_blank'} rel='noreferrer'>
-          <HiOutlineDocumentText className='text-ltext dark:text-dtext' size={25} />
-        </a>
-      )}
-      <a href={props.proj.githubLink} target={'_blank'} rel='noreferrer'>
-        <FiGithub className='text-ltext dark:text-dtext' size={25} />
-      </a>
-      {(props.proj.outLink ?? '') !== '' && (
-        <a href={props.proj.outLink} target={'_blank'} rel='noreferrer'>
-          <FiExternalLink className='text-ltext dark:text-dtext' size={25} />
-        </a>
-      )}
-      <div></div>
-    </div>
-  </div>
-)
+import { useState } from 'react'
+import { FiGithub } from 'react-icons/fi'
+import { projects } from './data'
 
 export const Projects = () => {
+  const [project, setProject] = useState(0)
+
   return (
     <div
       id='projects'
-      className='flex flex-col justify-center mx-auto my-[64px] px-8 w-full max-w-[920px] min-h-screen text-left'
+      className='flex flex-col justify-center mx-auto mt-[-96px] px-8 w-full max-w-[920px] h-screen text-left'
     >
-      <div className='mb-16 font-mono text-2xl text-lprimary md:text-4xl dark:text-dprimary'>
+      <div className='mb-6 font-mono text-2xl text-lprimary md:text-4xl dark:text-dprimary'>
         projects
       </div>
-      <div className='gap-y-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
-        {projects.map((p, i) => (
-          <Card proj={p} key={i} />
-        ))}
-      </div>
-      <div className='flex'>
-        <p className='mt-8 text-ltext dark:text-dtext'>
-          {'>'} feel free to find more projects{' '}
-          <a
-            className='underline'
-            href='https://github.com/ashis0013'
-            target='_blank'
-            rel='noreferrer'
-          >
-            here
-          </a>
-        </p>
+      <div className='flex flex-col mx-auto'>
+        <div className='flex md:hidden m-2'>
+          {projects.map((e, i) => (
+            <div
+              key={i}
+              className={`flex h-12 w-42 hover:bg-lsurface dark:hover:bg-dsurface ${
+                i === project ? 'text-lprimary dark:text-dprimary' : 'text-ltext dark:text-dtext'
+              }`}
+              onClick={() => setProject(i)}
+            >
+              <div className='mx-4 my-auto'>{e.title}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className='flex mx-auto'>
+          <div className='md:flex flex-col hidden'>
+            {projects.map((e, i) => (
+              <div
+                key={i}
+                className={`flex h-12 w-42 mb-0.5 hover:cursor-pointer hover:bg-lprimary dark:border-dprimary hover:dark:bg-dprimary mx-2 my-2 px-2 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-dtext dark:text-dprimary ${
+                  i === project ? 'text-lprimary dark:text-dprimary' : 'text-ltext dark:text-dtext'
+                }`}
+                onClick={() => setProject(i)}
+              >
+                <div className='mx-4 my-auto'>{e.title}</div>
+              </div>
+            ))}
+          </div>
+          <div className='flex flex-col ml-4 max-w-[624px] h-[364px]'>
+            <p className='flex items-center gap-3 m-2 text-ltext text-xl md:text-2xl dark:text-dtext'>
+              {projects[project].title}{' '}
+              <a
+                href={projects[project].githubLink}
+                target='_blank'
+                className='text-lprimary dark:text-dprimary'
+                rel='noreferrer'
+              >
+                <FiGithub className='text-ltext dark:text-dtext' size={20} />{' '}
+              </a>
+            </p>
+            <ul className='flex items-center gap-3 m-2 font-mono text-llav text-xs md:text-sm dark:text-dlav'>
+              {projects[project].techStack.map((tech, i) => (
+                <li key={i}>{tech}</li>
+              ))}
+            </ul>
+            <ul className='mx-4 list-disc'>
+              {projects[project].description.map((w, i) => (
+                <li key={i} className='mb-2 text-base text-ltext md:text-md dark:text-dtext'>
+                  {w}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )
