@@ -76,14 +76,13 @@ export const projects: project[] = [
       'A web app that lets user to search and apply to job openings based on their experience, location and salary',
   },
   {
-    title: 'COVID detection from X-Ray',
+    title: 'URL Shortener',
     githubLink: 'https://github.com/ashis0013/Inverted-Bell-Curve-Ensemble',
     docLink: 'https://link.springer.com/article/10.1007/s00521-021-06737-6',
-    description:
-      'An ensemble of transfer learned model using a novel weighted average scheme using inverted bell curves to detect COVID from X-Ray images',
+    description: 'An application that allows users to convert a long URL to a short URLs.',
   },
   {
-    title: 'gollection',
+    title: 'File Hider',
     description:
       'Functional utilites for go slices and maps implimented with go generics. Includes useful methods like map, filter etc',
     githubLink: 'https://github.com/ashis0013/gollections',

@@ -1,6 +1,5 @@
 import React from 'react'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import { FaJava } from 'react-icons/fa'
 import { HiOutlineDocumentText } from 'react-icons/hi'
 import { project, projects } from './data'
 
@@ -9,10 +8,6 @@ const Card = (props: { proj: project }) => (
     <p className='p-1 w-full text-center text-lprimary text-xl dark:text-dprimary'>
       {props.proj.title}
     </p>
-    <div className='flex justify-between px-4 w-full text-ltext text-sm dark:text-dtext'>
-      <FaJava />
-      <FiGithub />
-    </div>
     <p className='px-4 w-full text-ltext text-sm dark:text-dtext'>{props.proj.description}</p>
     <div className='flex justify-between my-3 w-full'>
       <div></div>
