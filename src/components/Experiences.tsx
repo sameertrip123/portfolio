@@ -59,7 +59,7 @@ export const Experiences = () => {
             </p>
             <ul className='mx-4 list-disc'>
               {experiences[company].description.map((w, i) => (
-                <li key={i} className='mb-2 text-base text-ltext md:text-md dark:text-dtext'>
+                <li key={i} className='mb-2 text-base text-ltext md:text-xs dark:text-dtext'>
                   {w}
                 </li>
               ))}
