@@ -92,8 +92,6 @@ export const experiences: work[] = [
     description: [
       'Collaborated with team members to develop coding problems and multiple-choice questions (MCQs) primarily centered on Data Structures and Algorithms for use in hiring assessments and online tests.',
       'Improved the problem-solving experience by enhancing the clarity of existing problem statements, introducing comprehensive test cases covering edge cases, addressing problem constraints, adding code stubs, and creating editorials for problems.',
-      'Worked closely with team members to ensure the quality and relevance of the assessment content, facilitating an effective evaluation process for candidates.',
-      'Contributed to the creation of a robust assessment framework by refining existing problems and developing new ones, aligning them with the desired skill sets and competencies sought by hiring organizations.',
     ],
   },
   {
@@ -103,7 +101,7 @@ export const experiences: work[] = [
     company: 'Samsung Prism',
     companyLink: 'https://www.samsungprism.com/',
     description: [
-      'Contributed to the design and enhancement of an IoT service designed to periodically scan for the optimal access point in the background, seamlessly connecting to the most reliable option within the network.',
+      'Contributed to the design and enhancement of an IoT service designed to periodically scan for the optimal access point in the background.',
       'Utilized QoS parameters to achieve latency of less than 300 millisecond, resulting in an improved experience.',
     ],
   },
