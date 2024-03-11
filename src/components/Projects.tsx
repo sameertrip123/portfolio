@@ -7,7 +7,7 @@ export const Projects = () => {
 
   return (
     <div
-      id='projects'
+      id='project'
       className='flex flex-col justify-center mx-auto mt-[-96px] px-8 w-full max-w-[920px] h-screen text-left'
     >
       <div className='mb-6 font-mono text-2xl text-lprimary md:text-4xl dark:text-dprimary'>
