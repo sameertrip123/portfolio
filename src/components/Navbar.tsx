@@ -22,7 +22,7 @@ const TextMenu = ({ name, tclass, onClk = () => {} }: Props) => (
 export const Button = (props: { name: string; onClick: () => void }) => (
   <button
     onClick={props.onClick}
-    className='dark:border-dprimary hover:bg-lprimary hover:dark:bg-dprimary mx-2 my-2 px-6 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-dtext dark:text-dprimary'
+    className='dark:border-dprimary hover:bg-lprimary hover:dark:bg-dprimary mx-2 my-2 px-6 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-lprimary dark:text-dprimary'
   >
     {props.name}
   </button>
