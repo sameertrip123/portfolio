@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from './Navbar'
+import CV from '../assets/cv.pdf'
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
 import { SiLeetcode } from 'react-icons/si'
 
@@ -10,7 +11,7 @@ export const Contact = () => {
       className='flex flex-col justify-center mx-auto mt-[-96px] px-8 w-full max-w-[920px] h-screen text-left'
     >
       <div className='mb-8 font-mono text-2xl text-lprimary md:text-4xl dark:text-dprimary'>
-        contact
+        Contact
       </div>
       <div className='grid grid-cols-1 md:grid-cols-5'>
         <div className='md:col-span-3 mr-8 mb-8'>
@@ -20,7 +21,7 @@ export const Contact = () => {
           </p>
           <div>
             <Button
-              name='mail me'
+              name='Mail me'
               onClick={() => {
                 const a = document.createElement('a')
                 a.href = 'mailto:sameertrip123@gmail.com'
@@ -28,10 +29,19 @@ export const Contact = () => {
                 a.click()
               }}
             />
+            <Button
+              name='Résumé'
+              onClick={() => {
+                const a = document.createElement('a')
+                a.href = CV
+                a.target = '_blank'
+                a.click()
+              }}
+            />
           </div>
         </div>
         <div className='md:col-span-2 my-8'>
-          <div className='font-bold text-2xl text-lprimary dark:text-dprimary'>
+          <div className='font-mono text-2xl text-lprimary dark:text-dprimary'>
             find me elsewhere
           </div>
           <div className='bg-lsubtext dark:bg-dsubtext mt-2 px-16 w-full h-[1px]'></div>

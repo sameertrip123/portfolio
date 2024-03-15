@@ -22,14 +22,14 @@ const TextMenu = ({ name, tclass, onClk = () => {} }: Props) => (
 export const Button = (props: { name: string; onClick: () => void }) => (
   <button
     onClick={props.onClick}
-    className='dark:border-dprimary hover:bg-lprimary hover:dark:bg-dprimary mx-2 my-2 px-6 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-lprimary dark:text-dprimary hover:ease-out'
+    className='dark:border-dprimary hover:bg-lprimary hover:dark:bg-dprimary mx-2 my-2 px-6 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-lprimary dark:text-dprimary hover:ease-out shadow-xl'
   >
     {props.name}
   </button>
 )
 
 export const Navbar = () => {
-  const elements = ['about', 'experience', 'project', 'contact']
+  const elements = ['About', 'Experience', 'Project', 'Contact']
   const [nav, setNav] = useState(false)
   const [theme, setTheme] = useDarkMode()
   const isDark = theme === 'dark'
@@ -51,7 +51,7 @@ export const Navbar = () => {
           {elements.map((e, i) => (
             <TextMenu key={i} name={e} tclass='p-4' />
           ))}
-          <Button name='Resume' onClick={download} />
+          <Button name='Résumé' onClick={download} />
         </ul>
         <DarkModeSwitch
           className='mx-6'
@@ -88,7 +88,9 @@ export const Navbar = () => {
                 name={e}
                 key={i}
                 onClk={handleNav}
-                tclass={`p-4 items-center ${i !== 3 ? ' border-b border-dprimary' : ''}`}
+                tclass={`font-mono text-xl p-4 items-center ${
+                  i !== 3 ? ' border-b border-dprimary' : ''
+                }`}
               />
             ))}
             <Button name='resume' onClick={download} />

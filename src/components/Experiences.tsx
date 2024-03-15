@@ -10,7 +10,7 @@ export const Experiences = () => {
       className='flex flex-col justify-center mx-auto mt-[-96px] px-8 w-full max-w-[920px] h-screen text-left'
     >
       <div className='mb-6 font-mono text-2xl text-lprimary md:text-4xl dark:text-dprimary'>
-        experiences
+        Experiences
       </div>
       <div className='flex flex-col mx-auto'>
         <div className='flex md:hidden m-2'>
@@ -32,7 +32,7 @@ export const Experiences = () => {
             {experiences.map((e, i) => (
               <div
                 key={i}
-                className={`flex h-12 w-42 mb-0.5 hover:cursor-pointer hover:bg-lprimary dark:border-dprimary hover:dark:bg-dprimary mx-2 my-2 px-2 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-lprimary dark:text-dprimary ${
+                className={`flex h-12 w-42 mb-0.5 text-mono hover:cursor-pointer hover:bg-lprimary dark:border-dprimary hover:dark:bg-dprimary mx-2 my-2 px-2 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-lprimary dark:text-dprimary ${
                   i === company
                     ? 'text-lprimary dark:text-dprimary'
                     : 'text-lprimary dark:text-dtext'

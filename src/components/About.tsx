@@ -8,7 +8,7 @@ export const About = (props: {}) => {
       className='flex flex-col justify-center mx-auto mt-[-96px] px-8 w-full max-w-[920px] h-screen text-left'
     >
       <div className='mb-16 font-mono text-2xl text-lprimary md:text-4xl dark:text-dprimary'>
-        about
+        About
       </div>
       <div className='flex md:flex-row flex-col'>
         <p className='my-auto md:mr-24 mb-16 text-lprimary text-sm md:text-lg md:text-md dark:text-dprimary'>
