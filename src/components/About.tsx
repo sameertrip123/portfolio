@@ -11,7 +11,7 @@ export const About = (props: {}) => {
         about
       </div>
       <div className='flex md:flex-row flex-col'>
-        <p className='my-auto md:mr-24 mb-16 text-ltext text-sm md:text-lg md:text-md dark:text-dtext'>
+        <p className='my-auto md:mr-24 mb-16 text-lprimary text-sm md:text-lg md:text-md dark:text-dprimary'>
           While I'm relatively new to the field of software engineering, I offer a fresh perspective
           in product development. My foundation in various aspects of software development is solid,
           particularly in Backend Development. Though my experience in frontend development is

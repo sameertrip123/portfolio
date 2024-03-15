@@ -44,7 +44,7 @@ export const Experiences = () => {
             ))}
           </div>
           <div className='flex flex-col ml-4 max-w-[624px] h-[364px]'>
-            <p className='m-2 text-ltext text-xl md:text-2xl dark:text-dtext'>
+            <p className='m-2 text-lprimary text-xl md:text-2xl dark:text-dprimary'>
               {experiences[company].position}{' '}
               <a
                 href={experiences[company].companyLink}
@@ -61,7 +61,7 @@ export const Experiences = () => {
             </p>
             <ul className='mx-4 list-disc'>
               {experiences[company].description.map((w, i) => (
-                <li key={i} className='mb-2 text-base text-ltext dark:text-dtext'>
+                <li key={i} className='mb-2 text-base text-lprimary dark:text-dprimary'>
                   {w}
                 </li>
               ))}

@@ -45,7 +45,7 @@ export const Projects = () => {
             ))}
           </div>
           <div className='flex flex-col ml-4 max-w-[624px] h-[364px]'>
-            <p className='flex items-center gap-3 m-2 text-ltext text-xl md:text-2xl dark:text-dtext'>
+            <p className='flex items-center gap-3 m-2 text-lprimary text-xl md:text-2xl dark:text-dprimary'>
               {projects[project].title}{' '}
               <a
                 href={projects[project].githubLink}
@@ -63,7 +63,7 @@ export const Projects = () => {
             </ul>
             <ul className='mx-4 list-disc'>
               {projects[project].description.map((w, i) => (
-                <li key={i} className='mb-2 text-base text-ltext md:text-md dark:text-dtext'>
+                <li key={i} className='mb-2 text-base text-lprimary md:text-md dark:text-dprimary'>
                   {w}
                 </li>
               ))}

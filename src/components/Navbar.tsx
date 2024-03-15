@@ -12,7 +12,7 @@ type Props = {
 
 const TextMenu = ({ name, tclass, onClk = () => {} }: Props) => (
   <li
-    className={`text-ltext dark:text-dtext hover:text-lprimary dark:hover:text-dprimary ${tclass}`}
+    className={`text-lprimary font-semibold dark:text-dprimary hover:text-lprimary dark:hover:text-dprimary hover:scale-105 hover:ease-out ${tclass}`}
     onClick={onClk}
   >
     <a href={`#${name.toLowerCase()}`}>{name}</a>
@@ -22,7 +22,7 @@ const TextMenu = ({ name, tclass, onClk = () => {} }: Props) => (
 export const Button = (props: { name: string; onClick: () => void }) => (
   <button
     onClick={props.onClick}
-    className='dark:border-dprimary hover:bg-lprimary hover:dark:bg-dprimary mx-2 my-2 px-6 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-lprimary dark:text-dprimary'
+    className='dark:border-dprimary hover:bg-lprimary hover:dark:bg-dprimary mx-2 my-2 px-6 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dtext dark:hover:text-lprimary dark:text-dprimary hover:ease-out'
   >
     {props.name}
   </button>

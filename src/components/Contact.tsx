@@ -14,7 +14,7 @@ export const Contact = () => {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-5'>
         <div className='md:col-span-3 mr-8 mb-8'>
-          <p className='my-8 text-base text-ltext md:text-lg dark:text-dtext'>
+          <p className='my-8 text-base text-lprimary md:text-lg dark:text-dprimary'>
             I am actively looking for new roles right now. Feel free to reach out to me for any
             opportunities or discussions.
           </p>
@@ -31,22 +31,34 @@ export const Contact = () => {
           </div>
         </div>
         <div className='md:col-span-2 my-8'>
-          <div className='font-bold text-2xl text-lsubtext dark:text-dsubtext'>
+          <div className='font-bold text-2xl text-lprimary dark:text-dprimary'>
             find me elsewhere
           </div>
           <div className='bg-lsubtext dark:bg-dsubtext mt-2 px-16 w-full h-[1px]'></div>
           <div className='flex justify-around mt-4 w-full'>
             <a href='https://www.linkedin.com/in/sameertri039/' target='_blank' rel='noreferrer'>
-              <FiLinkedin className='text-ltext dark:text-dtext' size={25} />
+              <FiLinkedin
+                className='text-lprimary dark:text-dtext hover:scale-110 hover:ease-out'
+                size={25}
+              />
             </a>
             <a href='https://github.com/sameertrip123' target='_blank' rel='noreferrer'>
-              <FiGithub className='text-ltext dark:text-dtext' size={25} />
+              <FiGithub
+                className='text-lprimary dark:text-dtext hover:scale-110 hover:ease-out'
+                size={25}
+              />
             </a>
             <a href='https://leetcode.com/sameertri039/' target='_blank' rel='noreferrer'>
-              <SiLeetcode className='text-ltext dark:text-dtext' size={25} />
+              <SiLeetcode
+                className='text-lprimary dark:text-dtext hover:scale-110 hover:ease-out'
+                size={25}
+              />
             </a>
             <a href='https://www.instagram.com/sameertri039/' target='_blank' rel='noreferrer'>
-              <FiInstagram className='text-ltext dark:text-dtext' size={25} />
+              <FiInstagram
+                className='text-lprimary dark:text-dtext hover:scale-110 hover:ease-out'
+                size={25}
+              />
             </a>
           </div>
         </div>
