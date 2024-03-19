@@ -19,9 +19,7 @@ export const Projects = () => {
             <div
               key={i}
               className={`flex h-12 w-42 hover:bg-lsurface dark:hover:bg-dsurface ${
-                i === project
-                  ? 'text-lprimary dark:text-dprimary'
-                  : 'text-lprimary dark:text-dprimary'
+                i === project ? 'text-lprimary dark:text-dprimary' : 'text-ltext dark:text-dtext'
               }`}
               onClick={() => setProject(i)}
             >
@@ -36,7 +34,9 @@ export const Projects = () => {
               <div
                 key={i}
                 className={`flex h-12 w-42 mb-0.5 hover:cursor-pointer hover:bg-lprimary dark:border-dprimary hover:dark:bg-dprimary mx-2 my-2 px-2 py-2 border border-lprimary rounded font-semibold text-lprimary hover:text-dprimary dark:hover:text-lprimary dark:text-dprimary ${
-                  i === project ? 'text-lprimary dark:text-dprimary' : 'text-ltext dark:text-dtext'
+                  i === project
+                    ? 'text-lprimary dark:text-dprimary'
+                    : 'text-primary dark:text-dtext'
                 }`}
                 onClick={() => setProject(i)}
               >
