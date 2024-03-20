@@ -24,7 +24,7 @@ export const projects: project[] = [
       'Developed a URL shortening application enabling users to convert lengthy URLs into shorter, more manageable links.',
       'Implemented Redis for efficient storage and management of URL mappings, ensuring rapid access and scalability.',
       'Engineered robust URL validation during the shortening process, enhancing security and usability.',
-      'Integrated rate limiting functionality to deter abuse by malicious users, ensuring the stability and integrity of the system.',
+      'Integrated rate limiting functionality to prevent abuse by malicious users, ensuring the stability and integrity of the system.',
     ],
     techStack: ['Go', 'Fiber', 'Redis'],
   },
