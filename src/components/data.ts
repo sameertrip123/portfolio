@@ -67,7 +67,7 @@ export const experiences: work[] = [
     companyLink: 'https://recruitcrm.io/',
     description: [
       'Developed and maintained Single Page Applications (SPAs) using PHP, Laravel, HTML, CSS, JavaScript and Vue.js, ensuring responsive user interfaces.',
-      'Utilized REST APIs for seamless communication between frontend and backend systems, ensuring efficient data exchange.',
+      'Utilized REST APIs for seamless communication between frontend and backend.',
       'Applied Test-Driven Development (TDD) principles to ensure the reliability and functionality of codebase components.',
       'Currently working on the migration of backend tech stack from PHP to Java, Spring Boot and Microservices architecture.',
     ],
