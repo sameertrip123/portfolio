@@ -41,7 +41,7 @@ export const Contact = () => {
           </div>
         </div>
         <div className='md:col-span-2 my-8'>
-          <div className='font-mono text-2xl text-lprimary dark:text-dprimary'>socials</div>
+          <div className='font-mono text-2xl text-lprimary dark:text-dprimary'>Find me on</div>
           <div className='bg-lsubtext dark:bg-dsubtext mt-2 px-16 w-full h-[1px]'></div>
           <div className='flex justify-around mt-4 w-full'>
             <a href='https://www.linkedin.com/in/sameertri039/' target='_blank' rel='noreferrer'>
