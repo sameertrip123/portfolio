@@ -2,8 +2,6 @@
 
 Welcome to my portfolio website!
 
-You can visit the website [here](https://sameertrip123.github.io/portfolio/)
-
 ## Overview
 
 This website serves as a showcase of my skills, works and experiences. It's designed to provide visitors with an overview of who I am as a professional, what I've accomplished, and how to get in touch with me.
