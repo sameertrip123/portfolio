@@ -33,7 +33,7 @@ export const Contact = () => {
               name='Résumé'
               onClick={() => {
                 const a = document.createElement('a')
-                a.href = CV
+                a.href = 'https://sameertrip123.github.io/cv'
                 a.target = '_blank'
                 a.click()
               }}

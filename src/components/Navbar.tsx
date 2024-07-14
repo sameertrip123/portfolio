@@ -35,7 +35,7 @@ export const Navbar = () => {
   const isDark = theme === 'dark'
   const download = () => {
     const a = document.createElement('a')
-    a.href = CV
+    a.href = 'https://sameertrip123.github.io/cv'
     a.target = '_blank'
     a.click()
   }
