@@ -66,10 +66,9 @@ export const experiences: work[] = [
     company: 'Recruit CRM',
     companyLink: 'https://recruitcrm.io/',
     description: [
-      'Developed and maintained Single Page Applications (SPAs) using PHP, Laravel, HTML, CSS, JavaScript and Vue.js, ensuring responsive user interfaces.',
-      'Utilized REST APIs for seamless communication between frontend and backend.',
-      'Applied Test-Driven Development (TDD) principles to ensure the reliability and functionality of codebase components.',
-      'Currently working on the migration of backend tech stack from PHP to Java, Spring Boot and Microservices architecture.',
+      'Revamped the candidates module, migrating the tech stack from PHP to Java, Spring Boot, Microservices and SOA, yielding a performance boost of 57.58%',
+      'Conducted analysis for 14 different existing endpoints, contributed to high-level and low-level design, developed new endpoints, and documented the entire process on Confluence.',
+      'Wrote unit tests for the new endpoints using JUnit and Mockito, ensuring 100% code coverage.',
     ],
   },
   {

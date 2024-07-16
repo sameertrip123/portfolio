@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from './Navbar'
-import CV from '../assets/cv.pdf'
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
 import { SiLeetcode } from 'react-icons/si'
 

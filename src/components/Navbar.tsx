@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Spin as Hamburger } from 'hamburger-react'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
-import CV from '../assets/cv.pdf'
 import useDarkMode from '../hooks/useDark'
 
 type Props = {
