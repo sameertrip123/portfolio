@@ -60,8 +60,18 @@ type work = {
 
 export const experiences: work[] = [
   {
-    startDate: 'October 2023',
+    startDate: 'July 2023',
     endDate: 'Present',
+    position: 'Software Engineer - Backend',
+    company: '1Bee.ai',
+    companyLink: 'https://1bee.ai/',
+    description: [
+      'Developed and maintained RESTful APIs for the company’s core product, a platform for AI-driven customer service automation.'
+    ],
+  },
+  {
+    startDate: 'October 2023',
+    endDate: 'June 2024',
     position: 'Software Engineer Intern',
     company: 'Recruit CRM',
     companyLink: 'https://recruitcrm.io/',
