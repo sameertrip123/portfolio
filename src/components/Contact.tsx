@@ -45,7 +45,7 @@ export const Contact = () => {
           </div>
           <div className='bg-lsubtext dark:bg-dsubtext mt-2 px-16 w-full h-[1px]'></div>
           <div className='flex justify-around mt-4 w-full'>
-            <a href='https://www.linkedin.com/in/sameertri039/' target='_blank' rel='noreferrer'>
+            <a href='https://www.linkedin.com/in/sameertrip123/' target='_blank' rel='noreferrer'>
               <FiLinkedin
                 className='text-lprimary dark:text-dtext hover:scale-110 hover:ease-out'
                 size={25}

@@ -60,13 +60,26 @@ type work = {
 
 export const experiences: work[] = [
   {
-    startDate: 'July 2023',
+    startDate: 'October 2024',
     endDate: 'Present',
-    position: 'Software Engineer - Backend',
+    position: 'Member of Technical Staff',
+    company: 'XCOM Labs',
+    companyLink: 'https://www.xcomran.com/en-us',
+    description: [
+      'Fixed event handling bugs in connection manager state machine. Improved stability and prevented unwanted UE releases.',
+      'Enhanced system stability through refactoring, bug fixing, and modernising legacy C++ code.',
+    ],
+  },
+  {
+    startDate: 'Ausust 2024',
+    endDate: 'October 2024',
+    position: 'Software Engineer Intern - Backend',
     company: '1Bee.ai',
     companyLink: 'https://1bee.ai/',
     description: [
-      'Developed and maintained RESTful APIs for the company’s core product, a platform for AI-driven customer service automation.'
+      'Contributed to the development and implementation of AI-driven outbound sales solutions, enhancing automation and efficiency in lead generation and customer engagement',
+      'Implemented a microservice for automating email workflows, including scheduling, auto-replies, and follow-up emails, utilizing RabbitMQ for asynchronous messaging and integrating claude APIs for intelligent email response generation',
+      'Developed an email tracking feature that allows the system to track when an email is opened, enhancing visibility and enabling more targeted follow-up actions.'
     ],
   },
   {
@@ -77,7 +90,7 @@ export const experiences: work[] = [
     companyLink: 'https://recruitcrm.io/',
     description: [
       'Revamped the candidates module, migrating the tech stack from PHP to Java, Spring Boot, Microservices and SOA, yielding a performance boost of 57.58%',
-      'Conducted analysis for 14 different existing endpoints, contributed to high-level and low-level design, developed new endpoints, and documented the entire process on Confluence.',
+      'Conducted analysis for 14 different existing endpoints, contributed to high-level and low-level design, developed new endpoints.',
       'Wrote unit tests for the new endpoints using JUnit and Mockito, ensuring 100% code coverage.',
     ],
   },
